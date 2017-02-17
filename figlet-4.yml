@@ -2,7 +2,7 @@
   become: yes
   become_user: root
   tasks:
-  - name: {{ pkg_state }} {{ pkg_name }}
+  - name: "{{ pkg_state }} {{ pkg_name }}"
     yum:
        name: "{{ pkg_name }}"
        state: "{{ pkg_state }}"
