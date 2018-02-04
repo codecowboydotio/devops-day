@@ -3,6 +3,6 @@
   become_user: root
   tasks:
   - name: Install Figlet
-    yum:
+    package:
        name: figlet
        state: absent

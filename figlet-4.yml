@@ -3,6 +3,6 @@
   become_user: root
   tasks:
   - name: "{{ pkg_name }} will be {{ pkg_state }}"
-    yum:
+    package:
        name: "{{ pkg_name }}"
        state: "{{ pkg_state }}"
