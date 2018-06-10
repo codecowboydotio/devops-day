@@ -1,4 +1,5 @@
 - hosts: "{{ target_hosts | default('blank-rhel') }}"
+  gather_facts: True
   become: yes
   become_user: root
   tasks:
